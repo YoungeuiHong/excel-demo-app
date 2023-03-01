@@ -5,20 +5,23 @@ import SimpleLayout from './layouts/simple';
 //
 import BlogPage from './pages/BlogPage';
 import UserPage from './pages/UserPage';
-import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
 import Page404 from './pages/Page404';
 import ProductsPage from './pages/ProductsPage';
 import DashboardAppPage from './pages/DashboardAppPage';
+import ExcelExportPage from "./pages/ExcelExportPage";
+import ExcelImportPage from "./pages/ExcelImportPage";
 
 // ----------------------------------------------------------------------
 
 export default function Router() {
   const routes = useRoutes([
     {
-      path: '/dashboard',
+      path: '/excel',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
+        { path: 'export', element: <ExcelExportPage/>},
+        { path: 'import', element: <ExcelImportPage/>},
         { path: 'app', element: <DashboardAppPage /> },
         { path: 'user', element: <UserPage /> },
         { path: 'products', element: <ProductsPage /> },
@@ -27,7 +30,7 @@ export default function Router() {
     },
     {
       path: 'login',
-      element: <LoginPage />,
+      element: <HomePage />,
     },
     {
       element: <SimpleLayout />,
