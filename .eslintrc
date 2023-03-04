@@ -1,5 +1,12 @@
 {
   "root": true,
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true
@@ -8,15 +15,20 @@
     "airbnb",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier"
   ],
   "plugins": [
     "react",
     "react-hooks",
-    "prettier"
+    "prettier",
+    "@typescript-eslint"
   ],
-  "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "project": true,
+    "tsconfigRootDir": ".",
     "ecmaVersion": 8,
     "requireConfigFile": false,
     "ecmaFeatures": {
