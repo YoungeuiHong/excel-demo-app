@@ -8,23 +8,18 @@ const icon = (name) => <SvgColor src={`/assets/icons/navbar/${name}.svg`} sx={{ 
 const navConfig = [
   {
     title: 'Define a header',
-    path: '/dashboard/app',
+    path: '/excel/header',
     icon: icon('ic_number_1'),
   },
   {
-    title: 'Enter body data',
-    path: '/dashboard/user',
+    title: 'Export Excel file',
+    path: '/excel/export',
     icon: icon('ic_number_2'),
   },
   {
-    title: 'Export Excel file',
-    path: '/dashboard/products',
-    icon: icon('ic_number_3'),
-  },
-  {
     title: 'Import Excel file',
-    path: '/dashboard/blog',
-    icon: icon('ic_number_4'),
+    path: '/excel/import',
+    icon: icon('ic_number_3'),
   }
 ];
 
