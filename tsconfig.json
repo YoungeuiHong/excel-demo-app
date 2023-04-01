@@ -7,9 +7,12 @@
     "strict": true,
     "esModuleInterop": true,
     "allowJs": true,
+    "outDir": "dist",
+    "noImplicitAny": false,
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "vite.config.js"
   ],
   "exclude": [
     "node_modules"
