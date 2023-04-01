@@ -69,7 +69,7 @@ export default function HomePage() {
                         <Typography variant="h3" sx={{px: 5, mt: 10, mb: 5}}>
                             Export and Import Excel
                         </Typography>
-                        <img src="/assets/illustrations/illustration_login.png" alt="login"/>
+                        <img src="/assets/images/excel/spreadsheet.svg" alt="excel" style={{padding: 40}}/>
                     </StyledSection>
                 )}
 
@@ -80,46 +80,46 @@ export default function HomePage() {
                             spacing={3}
                         >
                             <Link
-                                href={"/excel-export"}
+                                href={"/excel-front/header"}
                                 underline={"none"}
                             >
-                                <Card sx={{maxWidth: 500}}>
+                                <Card sx={{maxWidth: 500, height: 500}}>
                                     <CardActionArea>
                                         <CardMedia
                                             component="img"
-                                            image="/assets/images/excel/excel.svg"
-                                            alt="excel-export"
+                                            image="/assets/images/excel/Frontend.svg"
+                                            alt="excel"
                                             style={{padding: 80}}
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div">
-                                                Export
+                                                Frontend
                                             </Typography>
                                             <Typography variant="body2" color="text.secondary">
-                                                Define Excel header, enter body data, and export the file
+                                                Define Excel header, export and import the file.
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
                             </Link>
                             <Link
-                                href={"/excel-import"}
+                                href={"/excel-back/export"}
                                 underline={"none"}
                             >
-                                <Card sx={{maxWidth: 500}}>
+                                <Card sx={{maxWidth: 500, height: 500}}>
                                     <CardActionArea>
                                         <CardMedia
                                             component="img"
-                                            image="/assets/images/excel/excel.svg"
-                                            alt="excel-export"
+                                            image="/assets/images/excel/Backend.svg"
+                                            alt="excel"
                                             style={{padding: 80}}
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div">
-                                                Import
+                                                Backend
                                             </Typography>
                                             <Typography variant="body2" color="text.secondary">
-                                                Convert Excel data to JSON or DTO.
+                                                Export and import Excel using DTO with @ExcelColumn annotation
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>

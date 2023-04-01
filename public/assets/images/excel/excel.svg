@@ -16,7 +16,7 @@
 <metadata>
 	<sfw  xmlns="&ns_sfw;">
 		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="2130" width="2289.75" x="-1147.5" y="-1041"></sliceSourceBounds>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="300" width="100" x="-1147.5" y="-1041"></sliceSourceBounds>
 	</sfw>
 </metadata>
 <path fill="#185C37" d="M1437.75,1011.75L532.5,852v1180.393c0,53.907,43.7,97.607,97.607,97.607l0,0h1562.036

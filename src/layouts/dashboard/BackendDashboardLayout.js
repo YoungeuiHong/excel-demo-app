@@ -1,7 +1,7 @@
-import {useState} from 'react';
-import {Outlet} from 'react-router-dom';
+import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 // @mui
-import {styled} from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 //
 import Nav from './nav';
 
@@ -31,12 +31,12 @@ const Main = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function DashboardLayout() {
+export default function BackendDashboardLayout() {
   const [open, setOpen] = useState(false);
 
   return (
     <StyledRoot>
-      <Nav openNav={open} onCloseNav={() => setOpen(false)} isBackendPage={false}/>
+      <Nav openNav={open} onCloseNav={() => setOpen(false)} isBackendPage={true}/>
       <Main>
         <Outlet />
       </Main>
