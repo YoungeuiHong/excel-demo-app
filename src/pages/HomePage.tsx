@@ -57,7 +57,13 @@ export default function HomePage() {
             </Helmet>
 
             <StyledRoot>
-                <Logo/>
+                <Logo
+                    sx={{
+                        position: 'fixed',
+                        top: {xs: 16, sm: 24, md: 40},
+                        left: {xs: 16, sm: 24, md: 40},
+                    }}
+                />
 
                 {mdUp && (
                     <StyledSection>

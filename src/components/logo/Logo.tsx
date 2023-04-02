@@ -36,9 +36,7 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
         width: 40,
         height: 40,
         display: 'inline-flex',
-        position: 'fixed',
-        top: {xs: 16, sm: 24, md: 40},
-        left: {xs: 16, sm: 24, md: 40},
+        ...sx,
       }}
       {...other}
     >

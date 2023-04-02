@@ -4,13 +4,6 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import DashboardLayout from './layouts/dashboard';
 import SimpleLayout from './layouts/simple';
 //
-
-// import HomePage from './pages/HomePage';
-// import Page404 from './pages/Page404';
-// import FrontExportPage from "./pages/FrontExportPage";
-// import FrontImportPage from "./pages/FrontImportPage";
-// import BackExportPage from "./pages/BackExportPage";
-// import BackImportPage from "./pages/BackImportPage";
 import BackendDashboardLayout from "./layouts/dashboard/BackendDashboardLayout";
 import {HeaderDefinePage, HomePage, Page404, FrontExportPage, FrontImportPage, BackExportPage, BackImportPage} from "./pages";
 
